@@ -257,9 +257,10 @@ nav ul li .user {
     justify-content: center;
     flex-grow: 1;
     text-align: center;
+    margin-top: -250px ;
 }
 .logo {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
     color: #ffffff;
 }
@@ -319,8 +320,8 @@ nav ul li .user {
 }
 .footer {
     width: 100%;
-    background-color: #202124;
-    color: #9aa0a6;
+    background-color: rgb(24, 23, 23);
+    color: white;
     font-size: 14px;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -330,6 +331,7 @@ nav ul li .user {
 }
 .footer-top {
     text-align: left;
+    font-size: 16px;
     margin-bottom: 10px;
     padding-left: 10px;
 }
@@ -342,10 +344,10 @@ nav ul li .user {
 }
 .footer-left a,
 .footer-right a {
-    color: #9aa0a6;
+    color: white;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 13px;
+    font-size: 16px;
 }
 .footer-left a:hover,
 .footer-right a:hover {
@@ -355,9 +357,11 @@ nav ul li .user {
 .footer-left {
     display: flex;
     gap: 15px;
+    margin-left: 10px;
 }
 .footer-right {
     display: flex;
     gap: 15px;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-right:20px;
 }
