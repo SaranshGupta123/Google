@@ -4,7 +4,25 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgba(0, 0, 0, 0.699) !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #202124;
+    color: #e8eaed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: transparent;
 }
 nav ul {
     display: flex;
@@ -22,7 +40,6 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-
 nav ul .dot {
     width: 18px;
     height: 18px;
@@ -93,7 +110,6 @@ nav ul li .user {
     font-weight: bold;
     border-radius: 20px;
 }
-
 .more-button a{
     color: rgb(83, 83, 153);
     text-decoration: none;
@@ -120,7 +136,6 @@ nav ul li .user {
 #userDropdown{
     cursor: context-menu;
 }
-
 .user-dropdown-menu {
     display: none;
     position: absolute;
@@ -140,7 +155,6 @@ nav ul li .user {
     color: white;
     margin: 10px 0; 
 }
-
 .close-button {
     position: absolute;
     top: 8px;
@@ -158,7 +172,6 @@ nav ul li .user {
     text-align: center;
     margin-bottom: 10px;
 }
-
 .user-avatar,
 .edit-icon {
     width: 90px !important;
@@ -167,17 +180,14 @@ nav ul li .user {
     margin-top: 25px;
     border-radius: 50%;
 }
-
 .user-email {
     font-size: 14px;
     font-weight: bold;
 }
-
 .user-managed {
     font-size: 12px;
     color: #aaa;
 }
-
 .user-actions button{
     display: block;
     width: 50%;
@@ -190,7 +200,6 @@ nav ul li .user {
     margin-bottom: 10px;
     cursor: pointer;
     margin-left: 86px;
-
 }
 .user-options button {
     display: block;
@@ -204,22 +213,18 @@ nav ul li .user {
     margin-bottom: 10px;
     cursor: pointer;
 }
-
 .user-actions button:hover,
 .user-options button:hover {
     background-color: #555;
 }
-
 .user-privacy {
     text-align: center;
     font-size: 12px;
 }
-
 .user-privacy a {
     color: #aaa;
     text-decoration: none;
 }
-
 .user-privacy a:hover {
     color: white;
 }
@@ -244,4 +249,71 @@ nav ul li .user {
 .user-options {
     display: flex;
     justify-content: space-between; 
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+.search-bar input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #e8eaed;
+    font-size: 16px;
+}
+.search-bar .icon {
+    color: #9aa0a6;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.buttons button {
+    background-color: #303134;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.buttons button:hover {
+    background-color: #45474a;
+}
+.languages {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.languages a {
+    color: #8ab4f8;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.languages a:hover {
+    text-decoration: underline;
 }
