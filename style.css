@@ -32,27 +32,29 @@ nav ul {
     right: 30px;
     gap: 20px;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
-    margin-right: 5px;
+    font-size: 13px;
+    margin-right: 2px;
 }
 .navbar .gmail{
-    margin-right: -10px;
+    margin-right: -7px;
     transform: scale(1);
+    margin-top:-3px;
 }
 .navbar .images{
     padding-right: 5px;
+    margin-top:-3px;
 }
 nav ul li a:hover {
     text-decoration: underline;
 }
 nav ul .dot {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,14 +62,15 @@ nav ul .dot {
     filter: invert(100%);
     cursor: pointer;
     margin-right: 3px;
+    margin-top:-2px
 }
 nav ul div .dot:hover {
     background-color: rgba(110, 35, 35, 0.2); 
 }
 nav ul li .user {
-    width: 32px;
-    margin-top: -6px;
-    margin-right: -5px;
+    width: 30px;
+    margin-top: -8px;
+    margin-right: -9px;
 }
 .dropdown-1 {
     display: none;
@@ -264,28 +267,28 @@ nav ul li .user {
 }
 .content {
     text-align: center;
-    margin-top: -287px;
+    margin-top: -256px;
 }
 .logo{
     height: 92px;
     width: 780px;
 }
 .logo img{   
-    height: 102px;
+    height: 92px;
     aspect-ratio: auto 272 / 92;
-    width: 302px;
+    width: 272px;
+    margin-top:-2px;
 }
 .search-bar {
-    margin: 40px auto;
+    margin: 25px 0 40px 98px;
     display: flex;
     align-items: center;
-    max-width: 650px;
+    max-width: 584px;
     width: auto ;
     background-color: rgb(77, 81, 86);
     border: 1px solid #5f6368;
     border-radius: 24px;
-    padding: 11px;
-    padding-top: 12px;
+    padding: 8px;
 }
 .search-bar input {
     flex-grow: 1;
@@ -302,8 +305,9 @@ nav ul li .user {
     color: #9aa0a6;
     cursor: pointer;
     font-size: 15px;
-    margin-top: 2px;
-    margin-right: 5px;
+}
+.button-1{
+    margin-right:5px
 }
 .search-icons i{
     padding: 0 5px;
@@ -320,39 +324,28 @@ nav ul li .user {
     background-color: #303134;
     color: #e8eaed;
     border: 0 solid #5f6368;
-    padding: 12px 20px;
+    padding: 0 20px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: -8px;
-    height: 40px;
-    margin-left:2px;
-}
-.buttons .button-1{
-    margin-right: 7px !important;
-}
-.buttons .button-1 p{
-    margin-left: -1px;
-    margin-top: -1px;
-}
-.buttons .button-1{
-    margin-right: px !important;
+    margin-top: -10px;
+    margin-left:4px;
+    height: 35px;
 }
 .buttons button:hover {
     background-color: #45474a;
 }
 .languages {
     margin-top: 25px;
-    font-size: 14px;
+    font-size: 13px;
     color: #bfbfbf;
-    font-stretch: condensed;
-    gap: -20px;
+    font-stretch: expanded;
 }
 .languages a {
     color: #8ab4f8;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 2px;
     font-stretch: condensed;
 }
 .languages a:hover {
@@ -362,7 +355,7 @@ nav ul li .user {
     width: 100%;
     background-color: rgb(24, 23, 23);
     color: #e8e8e8;
-    font-size: 14px;
+    font-size: 17px;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
@@ -371,12 +364,12 @@ nav ul li .user {
 .footer-top {
     width: 100%;
     text-align: left;
-    font-size: 17px;
-    padding: 17px 30px;
+    font-size: 15px;
+    padding: 15px 30px;
     box-sizing: border-box;
 }
 .footer-top span {
-    margin-left: 6px;
+    margin-left: 1px;
 }
 .footer-bottom {
     display: flex;
@@ -386,13 +379,13 @@ nav ul li .user {
     padding-top: 10px;
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 30px;
+    padding: 15px 30px;
 }
 .footer-left a,
 .footer-right a {
     color: #e8e8e8;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 .footer-left a:hover,
 .footer-right a:hover {
@@ -401,19 +394,19 @@ nav ul li .user {
 }
 .footer-left {
     display: flex;
-    gap: 40px;
-    margin-left:9px;
+    gap: 34px;
+    margin-left:10px;
 }
 .footer-right {
     display: flex;
-    gap: 25px;
-    margin-right: 10px;
+    gap: 16px;
+    margin-right: 5px;
 }
 .Privacy{
-    margin-right:10px;
+    margin-right:14px;
 }
 .Options{
-    margin-left:10px;
+    margin-left:14px;
 }
 
 .left{
