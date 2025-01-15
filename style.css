@@ -277,7 +277,7 @@ nav ul li .user {
     height: 92px;
     aspect-ratio: auto 272 / 92;
     width: 272px;
-    margin-top:-2px;
+    margin-top: -1px;
 }
 .search-bar {
     margin: 25px 0 40px 98px;
@@ -297,7 +297,7 @@ nav ul li .user {
     outline: none;
     color: #e8eaed;
     font-size: 16px;
-    padding: 5px;
+    padding: 6px;
 }
 .search-bar button {
     background: none;
@@ -305,9 +305,6 @@ nav ul li .user {
     color: #9aa0a6;
     cursor: pointer;
     font-size: 15px;
-}
-.button-1{
-    margin-right:5px
 }
 .search-icons i{
     padding: 0 5px;
@@ -317,21 +314,40 @@ nav ul li .user {
     margin-right: 10px;
 }
 .buttons {
-    margin-top: 20px;
-    gap: 60 !important; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+    gap: 8px; 
 }
 .buttons button {
     background-color: #303134;
     color: #e8eaed;
     border: 0 solid #5f6368;
-    padding: 0 20px;
+    padding: 18px 20px; 
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: -10px;
-    margin-left:4px;
     height: 35px;
+}
+.button-1{
+    margin-left: 0;
+    width: 131px;
+    margin-right:5px;
+}
+.button-2{
+
+    margin-left: -1px;
+    width: 150px;
+}
+.button-1 p{
+    margin-top: -8px;
+    margin-left: -3px;
+}
+.button-2 p{
+    margin-top: -8px;
 }
 .buttons button:hover {
     background-color: #45474a;
