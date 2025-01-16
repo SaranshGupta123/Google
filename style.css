@@ -434,4 +434,23 @@ nav ul li .user {
     body {
         position: relative;
     }
+    nav ul .gmail{
+        font-size: 4px;
+    }
+    nav ul .images{
+        font-size: 8px;
+    }
+    nav ul .dot{
+        width: 6px;
+        height: 6px;
+        margin-top: -10px;
+        margin-right: -6px;
+    }
+    nav ul .user-dropdown{
+        margin-top: -15px;
+        margin-right: -10px;
+    }
+    nav ul .user-dropdown img{
+        width: 12px;
+    }
 }
