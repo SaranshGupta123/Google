@@ -434,23 +434,100 @@ nav ul li .user {
     body {
         position: relative;
     }
-    nav ul .gmail{
-        font-size: 4px;
+    .navbar ul a{
+        font-size: 6px ;
     }
-    nav ul .images{
-        font-size: 8px;
+    .navbar ul li{
+        margin-top: 10px;
     }
-    nav ul .dot{
-        width: 6px;
-        height: 6px;
-        margin-top: -10px;
-        margin-right: -6px;
+    .navbar ul .images {
+        margin-top: -25px;
+        margin-right: -18px;
     }
-    nav ul .user-dropdown{
-        margin-top: -15px;
+    .navbar ul .gmail{
+        margin-top: -25px;
+        margin-right: -18px;
+    }
+    .navbar ul .dropdown{
+        margin-top: -14px;
         margin-right: -10px;
     }
-    nav ul .user-dropdown img{
-        width: 12px;
+    .navbar ul .dropdown img{
+        width: 5px;
+        height: 7px;
+    }
+    .navbar ul .user-dropdown{
+        margin-top: -18px;
+        margin-right: -14px;
+    }
+    .navbar ul .user-dropdown img{
+        width: 11px;
+    }
+    .logo img{
+        width: 108px;
+        height: 37px;
+    }
+    .logo{
+        margin-top: -191px;
+    }
+    .search-bar {
+        width: 230px;
+        height: 20px;
+        margin-left: 274px;
+        margin-top: -45px;
+    }
+    .search-bar input {
+        width: 10px;
+    }
+    
+    .buttons button{
+        margin-top: -45px;
+        height: 18px !important;
+    }
+    .buttons .button-1{
+        padding: 0;
+        width: 50px;
+        font-size:6px;
+        margin-left: -10px;
+    }
+    .buttons .button-1 P{
+        margin-top: 1px;
+        margin-left: 2px;
+    }
+    .buttons .button-2 P{
+        margin-top: 1px;
+        margin-left: 2px;
+    }
+    .buttons .button-2{
+        padding: 0;
+        width: 50px;
+        font-size: 6px;
+        margin-left: -6px;
+    }
+    .languages{
+        font-size: 5px;
+        margin-top: -8px;
+    }
+    .footer div span{
+        font-size: 5px;
+    }
+    .footer-top{
+        padding: 7px 10px;
+        margin-top: -10px;
+        margin-left: 2px;
+    }
+    .footer-bottom{
+        padding: 6px 10px;
+    }
+    .footer div a{
+        font-size: 5px;
+        margin-left: -18px;
+        margin-top: -3px;
+    }
+    #left-1{
+        margin-left: 32px;
+    }
+    .Options{
+        margin-right: 40px;
     }
 }
