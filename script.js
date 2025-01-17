@@ -28,3 +28,13 @@ function toggleDropdown() {
     const dropdown = document.getElementById('userDropdown');
     dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }
+
+// Function to switch active tabs
+function selectTab(tab) {
+    // Remove active class from all tabs
+    document.querySelector('.everything').classList.remove('active');
+    document.querySelector('.images').classList.remove('active');
+
+    // Add active class to the selected tab
+    document.querySelector(`.${tab}`).classList.add('active');
+}

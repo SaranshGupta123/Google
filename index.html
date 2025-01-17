@@ -11,7 +11,11 @@
     <nav class="navbar">
         <ul>
             <li class="gmail"><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
-            <li class="images"><a href="https://www.google.com/imghp?hl=ta&authuser=0&ogbl">Images</a></li>
+            <li class="everything active"><a href="#" onclick="selectTab('everything')">Everything</a></li>
+            <li class="images"><a href="https://www.google.com/imghp?hl=ta&authuser=0&ogbl" onclick="selectTab('images')">Images</a></li>
+            <li class="bell">
+                <img src="notification.png" alt="Notifications">
+            </li>
             <li class="dropdown">
                 <div class="dot-container">
                     <img src="dots-menu.png" alt="menu" class="dot" id="menuButton">
