@@ -640,14 +640,14 @@ nav ul li .user {
     .footer {
         width: 100%;
         background-color: rgb(24, 23, 23);
-        color: #e8e8e8;
-        font-size: 17px;
+        color: #9e9e9e;
+        font-size: 12px !important;
         box-sizing: border-box;
         position: relative; 
         margin-top: 420px;
     }
     .footer div span {
-        font-size: 15px;
+        font-size: 12px;
     }
     .footer-top {
         padding: 15px 10px;
@@ -660,9 +660,26 @@ nav ul li .user {
         flex-direction: column;
     }
     .footer div a {
-        font-size: 15px;
+        font-size: 12px !important;
         margin-left: -18px;
         margin-top: -3px;
+        color: #9e9e9e;
+    }
+    .footer-left, .footer-right {
+        flex: 1;
+        display: flex; 
+        justify-content: flex-start; 
+        margin-left: 10px;
+    }
+    .footer-left{
+        margin-left: -40px;
+        margin-bottom: 30px;
+        color: #9e9e9e !important;
+    }
+    .footer-right{
+        gap:30px;
+        margin-left: 10px;
+        color: #9e9e9e !important;
     }
     #left-1 {
         margin-left: 32px;
