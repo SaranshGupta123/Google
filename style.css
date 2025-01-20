@@ -461,6 +461,7 @@ nav ul li .user {
     body
     {
         overflow-x: hidden !important;
+        font-family: Roboto, Helvetica Neue, sans-serif !important;
     }
     body {
         position: relative;
@@ -474,7 +475,6 @@ nav ul li .user {
         align-items: center;
         font-family: Arial, sans-serif;
         width: 100%;
-        font-size: 10px;
     }
     .navbar ul {
         list-style: none;
@@ -492,47 +492,61 @@ nav ul li .user {
         margin-top: 9px;
     }
     .navbar a {
+        display: block;
         text-decoration: none;
         color: #9e9e9e;
         font-weight: bold;
         transition: color 0.3s, border-bottom 0.3s;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0 8px;
     }
     .navbar .active a {
         color: #a8c7fa;
         border-bottom: 2px solid #a8c7fa;
-        padding-bottom: 20px;
+        padding-bottom: 17px;
+        font-size: 9pt !important;
     }
     nav .lab img{
-        width: 19px;
-        height: 19px;
+        width: 18px;
+        height: 18px;
         margin-left: 45px;
-        margin-top: 15px;
+        margin-top: 17px;
         filter: invert(100%);
     }
     .navbar ul .everything {
-        margin-top: 29px;
-        margin-left: -15px;
+        margin-top: 27px;
+        margin-left: -22px;
     }
     .navbar ul .everything a{
         margin-left: -15px;
-        margin-bottom: -20px;
+        margin-bottom: -17px;
         font-size: 9pt;
     }
     .navbar ul .images {
-        margin-top: 24px;
-        margin-left: -30px;
+        margin-top: 27px;
+        margin-left: -46px;
+    }
+    .navbar ul .images a{
+        font-size: 9pt;
     }
     .bell img,
     .dropdown img {
-        width: 18px;
-        height: 18xpx;
+        width: 17px;
+        height: 17xpx;
         cursor: pointer;
         filter: invert(100%);
         margin-top: 20px;
         margin-right: -80px;
     }
     .bell{
-        margin-left: 57px;
+        margin-top: -5px;
+        margin-left: 50px;
+    }
+    .dot-container{
+        width: 18px;
+        margin-right: 2px;
+        margin-top: 4px;
     }
     .dropdown{
         margin-right: -28px;
@@ -570,6 +584,8 @@ nav ul li .user {
     }
     .search-bar input {
         width: 10px;
+        margin: 0;
+        padding: 0;
         padding-bottom: 0;
     }
     .search-button{
@@ -583,40 +599,46 @@ nav ul li .user {
         display: none !important;
     }
     .content p a{
-        text-align: center; 
+        display: none ;
+        /*text-align: center; 
         color: #99c3ff; 
         text-decoration: none; 
         display: block; 
         padding: 5px;
         margin-top: -15px;
-        margin-bottom: 15px;
+        margin-bottom: 15px; */
     }
     .languages-container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        display: flex; /* Use flexbox to align items */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
         color: #bfbfbf;
     }
+    .languages-container p {
+        font-size: 10.2pt;
+        margin-top: -10px;
+        margin-bottom: 10px; /* Space between the text and the languages */
+    }
     .languages {
-        display: grid; 
-        grid-template-columns: repeat(6, 1fr); 
-        overflow: hidden; 
+        display: flex; /* Use flex to keep items in a single line */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items horizontally */
+        gap: 8px; /* Space between language links */
+        max-width: 42%; /* Ensure it doesn't exceed the container */
+        line-height: 10px;
     }
     .languages a {
-        text-align: center; 
+        flex: 0 0 calc(12% - 10px); /* Each link takes up 25% of the row minus gap */
+        font-size: 10pt;
+        text-align: center; /* Center text in each link */
+        max-width: 170px;
+        padding: 5px; /* Add some padding for aesthetics */
         color: #99c3ff; 
         text-decoration: none; 
         display: block; 
-        padding: 5px;
     }
     .languages a:hover {
         text-decoration: underline; 
-    }
-    .languages-container p {
-        margin: 0;
-        font-size: 14px; 
-        font-weight: bold;
-        text-align: center;
     }
     .trending-container {
         width: 90%;
@@ -627,83 +649,93 @@ nav ul li .user {
         margin-bottom: -400px;
         margin-left: 220px;
     } 
-    .trending-container h2 {
-        font-size: 19px;
+    .trending-container p {
+        font-size: 20px;
         margin-bottom: 12px;
         color: #e8e8e8;
         text-align: center;
         border-bottom: 1px solid #333333;
         padding-bottom: 8px;
-        margin-left: -230px;
-        margin-top: -10px;
+        margin-left: -238px;
+        margin-top: -20px;
     }
     .trending-list {
         list-style-type: none;
         padding: 0;
         margin: 0;
+        margin-top: -6px;
     }
     .trending-list li {
         font-size: 1rem;
-        padding: 15px 5px;
-        border-bottom: 1px solid #333333;
+        padding: 6px 8px;
+        border-bottom: 1px solid #5f6368;
         display: flex;
         align-items: center;
         cursor: pointer;
+        
     } 
+    .trending-list li p{
+        margin-left: -8px;
+        margin-top: 7px;
+        padding: 0;
+        font-size: 12pt;
+        line-height: 20px;
+    }
     .trending-list li::before {
         content: "↗";
         margin-right: 30px;
         color: #ffffff;
         font-size: 1rem;
+        line-height: 20px;
     }
     .footer {
         width: 100%;
         background-color: rgb(24, 23, 23);
         color: #9e9e9e;
-        font-size: 12px !important;
         box-sizing: border-box;
         position: relative; 
-        margin-top: 420px;
+        margin-top: 425px;
     }
-    .footer div span {
-        font-size: 12px;
+    .footer div span p{
+        font-size: 16px;
+        margin-top: -12px;
     }
     .footer-top {
-        padding: 15px 10px;
+        padding: 12px 10px;
         margin-top: -10px;
         margin-left: 2px;
     }
     .footer-bottom {
-        padding: 23px 10px;
+        padding: 18px 0;
         display: flex;
         flex-direction: column;
     }
     .footer div a {
-        font-size: 12px !important;
-        margin-left: -18px;
+        font-size: 16px !important;
         margin-top: -3px;
+        width: 20%;
         color: #9e9e9e;
+        white-space: nowrap;
     }
     .footer-left, .footer-right {
         flex: 1;
         display: flex; 
-        justify-content: flex-start; 
-        margin-left: 10px;
+        gap: 30px;
+        margin-left: 16px;
     }
-    .footer-left{
-        margin-left: -40px;
+    .footer-left a{
+        white-space: nowrap;
         margin-bottom: 30px;
         color: #9e9e9e !important;
     }
     .footer-right{
-        gap:30px;
-        margin-left: 10px;
         color: #9e9e9e !important;
+        margin-top: -20px;
+        margin-bottom: -8px;
+        padding: 10px 0;
+        margin-left: 10px;
     }
-    #left-1 {
-        margin-left: 32px;
-    }
-    .Options {
-        margin-right: 40px;
+    .Options{
+        margin-left: -3px;
     }
 }
