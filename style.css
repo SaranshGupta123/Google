@@ -266,7 +266,7 @@ nav ul li .user {
 }
 .content {
     text-align: center;
-    margin-top: -296px;
+    margin-top: -290px;
 }
 .logo {
     height: 92px;
@@ -279,7 +279,7 @@ nav ul li .user {
     margin-top: -12px;
 }
 .search-bar {
-    margin: 14px 0 40px 98px;
+    margin: 14px 0 40px 99px;
     display: flex;
     align-items: center;
     max-width: 584px;
@@ -287,7 +287,7 @@ nav ul li .user {
     background-color: rgb(77, 81, 86);
     border: 1px solid #5f6368;
     border-radius: 24px;
-    padding: 8px;
+    padding: 5px;
 }
 .search-bar input {
     flex-grow: 1;
@@ -296,7 +296,19 @@ nav ul li .user {
     outline: none;
     color: #e8eaed;
     font-size: 16px;
-    padding: 6px;
+    padding: 0;
+}
+.search-bar .search-button{
+    filter: invert(60%);
+    margin-left: 7px;
+    margin-top: 3px;
+}
+.search-bar .search-button img{
+    width: 20px;
+}
+.search-bar .search-icons img{
+    width: 31px;
+    margin-right: 6px;
 }
 .search-bar button {
     background: none;
@@ -304,13 +316,6 @@ nav ul li .user {
     color: #9aa0a6;
     cursor: pointer;
     font-size: 15px;
-}
-.search-icons i {
-    padding: 0 5px;
-    font-size: 18px;
-}
-.search-icons .bi-camera {
-    margin-right: 10px;
 }
 .buttons {
     display: flex;
@@ -329,21 +334,21 @@ nav ul li .user {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: -10px;
-    height: 35px;
+    height: 36px;
 }
 .button-1 {
-    width: 131px;
-    margin-right: 5px;
+    padding: 0 0 0 16px ;
+    margin-right: 8px;
+    margin-left: 5px;
 }
 .button-2 {
-    margin-left: -1px;
-    width: 150px;
+    margin-left: -6px;
+    padding: 0 16px 0 0;
 }
 .button-1 p {
     margin-top: -8px;
     margin-left: -3px;
 }
-
 .button-2 p {
     margin-top: -8px;
 }
@@ -364,11 +369,14 @@ nav ul li .user {
     width: 100%;
     text-align: left;
     font-size: 15px;
-    padding: 15px 30px;
+    padding: 0 30px;
     box-sizing: border-box;
 }
 .footer-top span {
     margin-left: 1px;
+}
+.footer-top span p{
+    margin-bottom: 15px;
 }
 .footer-bottom {
     display: flex;
@@ -427,17 +435,21 @@ nav ul li .user {
         text-align: center; 
         margin: 20px 0;
         display: flex; 
-        margin-left: 140px;
-        font-size: 13px;
+        margin-left: 120px;
+        font-size: 14px;
         color: #bfbfbf;;
         margin-bottom: -45px;
         gap: 10px;
+        margin-top: 26px;
+        padding: 0 3px;
       }
       .languages {
         display: inline;
         font-size: 13px;
         font-stretch: expanded;
         overflow: hidden;
+        margin-left: -5px;
+        margin-top: -2px;
       }
       .languages a {
         color: #8ab4f8;
@@ -445,6 +457,8 @@ nav ul li .user {
         margin: 0 2px;
         font-stretch: condensed;
         display: inline;
+        font-size: 14px;
+        margin-left: 1px;
       }
       .languages a:hover {
         text-decoration: underline;
@@ -564,7 +578,7 @@ nav ul li .user {
         display: none !important;
     }
     .content{
-        margin-top: 218px;
+        margin-top: 217px;
     }
     .logo img {
         height: 52px;
@@ -580,7 +594,8 @@ nav ul li .user {
         width: 360px;
         height: 8;
         margin-left: 210px;
-        margin-top: -2px;
+        margin-top: 0;
+        padding: 0 0;
     }
     .search-bar input {
         width: 10px;
@@ -592,8 +607,15 @@ nav ul li .user {
         margin-left: 8px;
         margin-right: 10px;
     }
-    .search-icons{
-        margin: 0 10px;
+    .search-bar .search-button img{
+        width: 23px;
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+    .search-bar .search-icons img{
+        width: 31px;
+        margin-right: 11px;
+        margin-top: 4px;
     }
     .buttons{
         display: none !important;
